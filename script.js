@@ -53,7 +53,7 @@ var quotes = [
 	];
 
 var currentQuote = "";
-var linkGenerated = "https://vercel.com/alade5673/ril-mothers-day";
+var linkGenerated = "https://vercel.com/ril-mothers-day";
 var randomquote = "";
 var randomcolor = "";
 
