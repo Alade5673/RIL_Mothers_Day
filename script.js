@@ -53,7 +53,7 @@ var quotes = [
 	];
 
 var currentQuote = "";
-// var currentAuthor = "";
+var linkGenerated = "https://vercel.com/alade5673/ril-mothers-day";
 var randomquote = "";
 var randomcolor = "";
 
@@ -63,7 +63,7 @@ function getQuote() {
     currentQuote = quotes[randomquote][0];
     // currentAuthor = quotes[randomquote][1];
 	if (inIframe()) {
-		$('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=RILMothersDay&related=aLamm&text=' + encodeURIComponent('"' + currentQuote ));
+		$('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=RILMothersDay&related=aLamm&text=' + encodeURIComponent('"' + currentQuote + "" + linkGenerated));
 	}
 
 	$(document).ready(function () {
@@ -99,7 +99,7 @@ $(document).ready(function () {
 
 	$('#tweetquote').on('click', function () {
         if (!inIframe()) {
-            openURL('https://twitter.com/intent/tweet?hashtags=RILMothersDay&related=freecodecamp&text=' + encodeURIComponent('"' + currentQuote ));
+            openURL('https://twitter.com/intent/tweet?hashtags=RILMothersDay&related=freecodecamp&text=' + encodeURIComponent('"' + currentQuote + "" + linkGenerated));
         }
     });
 
