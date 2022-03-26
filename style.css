@@ -31,6 +31,40 @@ body {
   padding-right: 10px;
 }
 
+.logo {
+  /* display: flex; */
+  margin-top: 30px;
+  width: 100%;
+}
+
+.logo .image {
+  width: 100px;
+  height: 50px;
+  float: left;
+  /* margin-right: 950px; */
+}
+
+.logo .handle {
+  color: white;
+  margin-top: 25px;
+  float: right;
+  align-items: flex-end;
+  font-weight: 700;
+}
+
+.header-text {
+  margin: auto;
+  width: 50%;
+}
+
+.header-text .header {
+  color: white;
+  /* width: 100%; */
+  /* text-align: center; */
+  padding-left: 80px;
+  padding-top: 80px;
+}
+
 blockquote {
   border-left: 10px solid #490a3d;
   margin: 30px 10px;
@@ -54,10 +88,11 @@ blockquote footer {
   color: transparent;
 }
 
-.container {
+/* .container {
   max-height: 800px;
   margin: 5% auto auto auto;
-}
+} */
+
 .quotebox {
   background: #fff;
   max-width: 500px;
@@ -173,12 +208,103 @@ ul .speech.active {
   #quotetext {
     font-size: 25px;
   }
+
+  .body {
+    width: 100%;
+  }
+
   .container {
     margin-right: 20px;
+    align-items: center;
+  }
+
+  .header-text {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .header-text .header {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    /* padding-left: 80px; */
+  }
+
+  .quotebox {
+    background: #fff;
+    max-width: 400px;
+    min-height: 100px;
+    border: 1px solid #222;
+    border-radius: 5px;
+  }
+
+  .logo {
+    margin-top: 30px;
+    /* display: flex; */
+    /* top: -120px; */
+    /* width: 50%; */
+  }
+
+  .logo .image {
+    /* width: 100px;
+    height: 50px; */
+    float: left;
+    /* margin-right: 950px; */
+  }
+
+  .logo .handle {
+    color: white;
+    float: right;
+    /* margin-left: 320px;
+    margin-right: 20px; */
+    font-weight: 700;
+  }
+
+  .header {
+    color: white;
+    /* margin-left: 80px; */
+    text-align: center;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 320px) {
   #quotetext {
     font-size: 18px;
+  }
+
+  .quotebox {
+    background: #fff;
+    max-width: 350px;
+    min-height: 100px;
+    border: 1px solid #222;
+    border-radius: 5px;
+  }
+
+  .logo {
+    display: flex;
+    top: -120px;
+    width: 100%;
+  }
+
+  .logo .image {
+    width: 100px;
+    height: 50px;
+    float: left;
+    /* margin-right: 950px; */
+  }
+
+  .logo .handle {
+    color: white;
+    margin-left: 300px;
+    margin-right: 20px;
+    font-weight: 700;
+  }
+
+  .row .header {
+    /* color: white;
+    margin-left: 70px;
+    text-align: center;
+    width: 100%; */
   }
 }
